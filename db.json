@@ -1,0 +1,13 @@
+{
+  "campeonatos": [],
+  "unidades": [
+    {
+      "name": "TESTE",
+      "cidade": "sp",
+      "bairro": "x",
+      "endereço": "rua x",
+      "services": [],
+      "id": 1
+    }
+  ]
+}
