@@ -24,6 +24,9 @@ function Navbar() {
                 <li className={styles.item}>
                     <Link to="/championships">Campeonatos</Link>
                 </li>
+                <li className={styles.item}>
+                    <Link to="/unidades">Unidades</Link>
+                </li>
                 
             </ul>
             </Container>

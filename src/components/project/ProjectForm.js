@@ -20,19 +20,15 @@ function ProjectForm({handleSubmit, btnText, projectData}) {
         .then((data) => {
             setUnidades(data)
         })
-        .catch((err) => console.log(err))
-
     }, [])
 
     const submit = (e) => {
         e.preventDefault()
-        console.log(unidades)
         handleSubmit(unidades)
     }
 
     function handleChange(e) {
         setUnidades({ ...unidades, [e.target.name]: e.target.value})
-        console.log(unidades)
     }
 
     return (
@@ -43,7 +39,7 @@ function ProjectForm({handleSubmit, btnText, projectData}) {
                 name="name"
                 placeholder="Insira o nome da Unidade"
                 handleOnChange={handleChange}
-                value={unidades.name ? unidades.name : ''}
+                value={unidades.name }
             />
             <Input 
                 type="text"
@@ -51,7 +47,7 @@ function ProjectForm({handleSubmit, btnText, projectData}) {
                 name="cidade"
                 placeholder="Insira o nome da cidade"
                 handleOnChange={handleChange}
-                value={unidades.cidade ? unidades.cidade : ''}
+                value={unidades.cidade }
             />
             <Input 
                 type="text"
@@ -59,7 +55,7 @@ function ProjectForm({handleSubmit, btnText, projectData}) {
                 name="bairro"
                 placeholder="Insira o nome do bairro"
                 handleOnChange={handleChange}
-                value={unidades.bairro ? unidades.bairro : ''}
+                value={unidades.bairro }
             />
             <Input 
                 type="text"

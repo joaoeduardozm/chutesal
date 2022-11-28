@@ -6,6 +6,8 @@ import NewUnity from './components/pages/NewUnity';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Championships from './components/pages/Championships';
+import Unidades from './components/pages/Unidades';
+import Unidade from './components/pages/Unidade';
 
 function App() {
   return (
@@ -13,10 +15,12 @@ function App() {
           <Navbar />
             <Container>
               <Routes>
-                  <Route exact path="/" element={<Home />}></Route>
-                  <Route exact path="/newunity" element={<NewUnity />}></Route>
-                  <Route exact path="/newchampionship" element={<NewChampionship />}></Route>
-                  <Route exact path="/championships" element={<Championships />}></Route>
+                  <Route path="/" element={<Home />}></Route>
+                  <Route path="/newunity" element={<NewUnity />}></Route>
+                  <Route path="/newchampionship" element={<NewChampionship />}></Route>
+                  <Route path="/championships" element={<Championships />}></Route>
+                  <Route path="/unidades" element={<Unidades />}></Route>
+                  <Route path="/unidade/:id" element={<Unidade />}></Route>
               </Routes>
             </Container>
             <Footer />

@@ -19,12 +19,12 @@ function NewUnity() {
             },
             body: JSON.stringify(project),
         })
-        .then((resp => resp.json())
+        .then((resp) => resp.json())
         .then((data) => {
             console.log(data)
-            navigate.push('/unidades', {message: 'Unidade criada com sucesso'})
+            navigate('/unidades', {message: 'Unidade criada com sucesso'})
         })
-        ).catch(err => console.log(err))
+        .catch(err => console.log(err))
     }
 
     return (
