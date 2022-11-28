@@ -9,9 +9,23 @@ import Championships from './components/pages/Championships';
 import Unidades from './components/pages/Unidades';
 import Unidade from './components/pages/Unidade';
 
+import LoginButton from './components/Log/LoginButton';
+import LogoutButton from './components/Log/LogoutButton';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 function App() {
   return (
         <Router>
+          <>
+            <nav className="navbar bg-dark">
+                <div className="container-fluid">
+                    <span className="appName">
+                        React User Authentication</span>
+                </div>
+            </nav>
+            <LoginButton />
+            <LogoutButton />
+        </>
           <Navbar />
             <Container>
               <Routes>
